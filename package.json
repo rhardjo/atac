@@ -1,0 +1,10 @@
+{
+    "name": "SWAPP",
+    "version": "0.0.0",
+    "description": "SWAPP GAME",
+    "dependencies": {
+        "socket.io": "latest",
+        "express": "latest"
+    },
+    "author": "Rano"
+}

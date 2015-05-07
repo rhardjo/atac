@@ -1,0 +1,566 @@
+body {
+	font-family: sans-serif;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#container {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: url(../img/background2.png) no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: block;
+}
+#container img { position: absolute; }
+
+/***************************************
+*			  START SCHERM 	  	       *
+***************************************/
+
+#startknop-container{
+    width: 350px;
+    height: 150px;
+	margin: 0 auto;
+}
+#startknop{
+    width: 350px;
+    height: 150px;
+    background-image: url(../img/startknop.svg);
+    position: absolute;
+    top:50%;
+}
+
+/***************************************
+*			  NOTIFICATIES 	  	       *
+***************************************/
+
+.notification {
+	position: absolute;
+	top: 20px;
+	left: -50px;
+	width: 20em;
+	margin: 0 auto;
+	display: none;
+	opacity: 0;
+	z-index: 9999999999999999999;
+}
+/***************************************
+*			    BUTTONS 	  	       *
+***************************************/
+.btn-container {
+	background: url(../img/hout.svg) no-repeat;
+	width: 400px;
+	height: 150px;
+	position: absolute;
+	bottom: 0;
+	left: -30px;
+	z-index: 9999999999999999999;
+}
+.btn { display: inline-block; }
+/* 			knoppen potions aanvaller: 		; */
+
+#button {
+  background: url(../img/hout.svg) no-repeat;
+  width: 400px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  right: -30px;
+	position: absolute;
+	z-index: 10;
+}
+
+
+/*			AANVALLER			*/
+#abtn1 {
+	background: url(../img/herb1.svg) no-repeat;
+	margin-left: 3em;
+	width: 75px;
+	height: 75px;
+	background-size: cover;
+}
+#abtn2 {
+	background: url(../img/herb2.svg) no-repeat;
+	margin-left: 0.5em;
+	width: 75px;
+	height: 75px;
+	background-size: cover;
+}
+#abtn3 {
+	background: url(../img/herb3.svg) no-repeat;
+	margin-left: 0.5em;
+	margin-top: 2em;
+	width: 75px;
+	height: 75px;
+	background-size: cover;
+}
+
+/*			VERZAMELAAR			*/
+#vbtn1 {
+	background: url(../img/combineer1.svg) no-repeat;
+	margin-left: 3em;
+	width: 75px;
+	height: 75px;
+	background-size: cover;
+}
+#vbtn2 {
+	background: url(../img/combineer2.svg) no-repeat;
+	margin-left: 0.5em;
+	width: 75px;
+	height: 75px;
+	background-size: cover;
+}
+#vbtn3 {
+	background: url(../img/combineer3.svg) no-repeat;
+	margin-left: 0.5em;
+	margin-top: 2em;
+	width: 75px;
+	height: 75px;
+	background-size: cover;
+}
+
+/*			GENEZER			*/
+#gbtn1 {
+	background: url(../img/red-potion.svg) no-repeat;
+	margin-left: 3em;
+	width: 75px;
+	height: 75px;
+	background-size: cover;
+}
+#gbtn2 {
+	background: url(../img/yellow-potion.svg) no-repeat;
+	margin-left: 0.5em;
+	width: 75px;
+	height: 75px;
+	background-size: cover;
+}
+#gbtn3 {
+	background: url(../img/blue-potion.svg) no-repeat;
+	margin-left: 0.5em;
+	margin-top: 2em;
+	width: 75px;
+	height: 75px;
+	background-size: cover;
+}
+
+/***************************************
+*		 	AANVALLER SCHERM 		   *
+***************************************/
+.zoekLaag{
+	width: 100vw;
+	height: 100vh
+	position: absolute;
+}
+.free{
+	opacity: 1;
+	display: inline-block;
+    float: left;
+	width:12em;
+	position: relative; 
+	top: 0; 
+	left: 0;
+	z-index: 2;
+	 -webkit-animation-name: Zweefanimatie; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-name: Zweefanimatie;
+    animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+}
+.spraak{
+	opacity: 0;
+	display: inline-block;
+	width:8em;
+	position: relative; 
+	top: 0; 
+	left: 0;
+	z-index: 2;
+	 -webkit-animation-name: Zweefanimatie; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-name: Zweefanimatie;
+    animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+}
+
+#spraak3{z-index: 6;}
+
+@-webkit-keyframes Zweefanimatie {
+    0%   {top:0px;}
+    50% {top:20px;}
+	100% {top:0px;}
+}
+.quarantine{
+	opacity: 0.3;
+	display: inline-block;
+    float: left;
+	width:12em;
+	position: relative; 
+	top: 0; 
+	left: 0;
+	z-index: 0;
+	 -webkit-animation-name: Zweefanimatie; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-name: Zweefanimatie;
+    animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+}
+.container{
+	position: relative; 
+	left: 0; 
+	top: 0;
+	float:left;
+	padding: 50em 10em;
+	margin: 0 auto;
+}
+#monster{
+	position: absolute; 
+	margin-left: 6em;
+	width:192px;
+	height: 192px;	
+}
+#monster-con{
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+	top: 300px;
+	left: 150px;
+}
+p{
+	font-size: 60px;
+	text-align: center;
+	color:white;
+	z-index: 1;
+}
+p:after{
+  content: "";
+    width: 100px;
+    height: 0px;
+    margin-top: 165px;
+    margin-left: -45px;	
+	display: block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+	 -webkit-animation-name: Schaduwanimatie; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+    animation-name: Schaduwanimatie;
+    animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+    -webkit-box-shadow: 0px 0px 5px 1px #000000;
+       -moz-box-shadow: 0px 0px 5px 1px #000000;
+            box-shadow: 0px 0px 5px 1px #000000;
+}
+@-webkit-keyframes Schaduwanimatie {
+    0%   {width: 90px; 	margin-left: -45px;	}
+    50%	 {width: 150px; margin-left: -75px;}
+	100% {width: 90px; margin-left: -45px;	}
+
+}
+.blad{
+	position: absolute;
+	z-index: 3;
+	bottom:0;
+}
+.zoekLaag {
+	pointer-events: auto;
+	z-index: 3;
+}
+#blad1{
+	position: absolute;
+	width:40%;
+	right:500px;
+	top:200px;
+}
+#blad2{
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+	width:60%;
+	top:200px;
+	
+}
+#blad3{
+	width:60%;
+	right:500px;
+	bottom:200px;
+}
+#blad4{
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+	width:40%;
+	left:600px;
+	bottom:300px;
+}
+#blad5{
+	-ms-transform: rotate(300deg); /* IE 9 */
+    -webkit-transform: rotate(300deg); /* Chrome, Safari, Opera */
+    transform: rotate(300deg);
+	width:60%;
+	bottom:300px;
+	left:200px;
+}
+#blad6{
+	-ms-transform: rotate(120deg); /* IE 9 */
+    -webkit-transform: rotate(120deg); /* Chrome, Safari, Opera */
+    transform: rotate(120deg);
+	width:60%;
+	top:250px;
+	left:300px;
+}
+#blad7{
+	width:40%;
+	left:600px;
+}
+#ptn1{
+	background: url(../img/blue-potion.svg) no-repeat;
+	margin-left: 3em;
+	width: 75px;
+	height: 75px;
+	background-size: cover;
+	opacity: 0.5;
+}
+#ptn2 {
+	background: url(../img/yellow-potion.svg) no-repeat;
+	margin-left: 0.5em;
+	width: 75px;
+	height: 75px;
+	background-size: cover;
+	opacity: 0.5;
+}
+#ptn3 {
+	background: url(../img/red-potion.svg) no-repeat;
+	margin-left: 0.5em;
+	margin-top: 2em;
+	width: 75px;
+	height: 75px;
+	background-size: cover;
+	opacity: 0.5;
+}
+
+/***************************************
+*			VERZAMEL SCHERM 		   *
+***************************************/
+#herb1 {
+	display: inline-block;
+	color: 222222;
+	font-weight: 100;
+}
+#herb2 {
+	display: inline-block;
+	color: 222222;
+	margin-left: 1em;
+	font-weight: 100;
+}
+#herb3 {
+	display: inline-block;
+	color: 222222;
+	margin-left: 1em;
+	font-weight: 100;
+}
+.score > span {
+	font-weight: bold;
+	color: #333333 ;
+}
+.bommetje { z-index: 1000; }
+.herb {}
+
+/*SPELER IMAGE*/
+#aplayer {
+	background: url(../img/aanvaller.svg) no-repeat;
+	width: 200px;
+	height: 175px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 9999999999999999999;
+}
+#vplayer {
+	background: url(../img/verzamelaar.svg) no-repeat;
+	width: 200px;
+	height: 175px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 9999999999999999999;
+}
+
+/***************************************
+*			 GENEZER SCHERM 		   *
+***************************************/
+#herb-container {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	z-index: 9999999999999999999999;
+}
+
+#scoreboard {
+	display: inline-block;
+	padding: 0.5em;
+	font-size: 20px;
+	background-color: rgba(255,255,255,0.5);
+	z-index: 9999999999999999999;
+}
+#gplayer {
+	background: url(../img/genezer.svg) no-repeat;
+	width: 200px;
+	height: 175px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 9999999999999999999;
+}
+
+/*KETEL*/
+
+.high{
+    z-index: 9999999999;
+    width: 100%;
+    height: 100%;
+}
+
+/*KETEL*/
+
+#ketel-placeholder{
+    margin-top: 80px;
+    margin-left:100px; 
+}
+
+#ketel{
+    width: 210px;
+    height: 230px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 2;
+    z-index: 9999999999;
+    position: absolute; 
+	bottom:200px;
+}
+
+.standing{
+	background-image:url("../img/ketel.svg");
+}
+
+.flipped{
+    -ms-transform: rotate(60deg); /* IE 9 */
+    -webkit-transform: rotate(60deg); /* Safari */
+    transform: rotate(60deg);
+	background-image:url("../img/ketel2.svg");
+    z-index: 9999999999;
+    position: absolute;
+    width:246px;
+    height: 218px;
+}
+
+/*COMBINEER*/
+.combine {
+	position: relative;
+}
+.blue-potion{
+    background-image:url("../img/blue-potion.svg");
+    width: 100px;
+    height: 100px;
+    z-index: 999999999999999999;
+    opacity: 1;
+}
+.yellow-potion{
+    background-image:url("../img/yellow-potion.svg");
+    width: 100px;
+    height: 100px;
+    z-index: 999999999999999999;
+    opacity: 1;
+}
+.red-potion{
+    background-image:url("../img/red-potion.svg");
+    width: 100px;
+    height: 100px;
+    z-index: 999999999999999999;
+    opacity: 1;
+}
+#potion-placeholder{
+    width: 100px;
+    height: 100px;
+    bottom:300px;
+	left:150px;
+    z-index: 99999999999999999999999999999;
+    position: absolute;
+	opacity:1;
+}
+#kettle-restore-placeholder{
+    width: 78px;
+    height: 85px;
+    margin-left: 100px;
+    margin-top: 120px;
+    z-index: 99999999999999999999999999999;
+    position: absolute;
+}
+.kettle-restore-button{
+    width: 78px !important;
+    height: 85px !imporant;
+    background-image: url("../img/broken.svg") !important;
+}
+
+/***************************************
+*			  GLOBAL TIMER 		       *
+***************************************/
+h1, #finalMessage{
+	height: 100px;
+    font-size:100px;
+	text-align: center;
+    color: white;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	z-index: 9999999999999999999;
+}
+
+#progress-container {
+	position: absolute;
+	bottom: 170px;
+	width: 40px;
+	height: 400px;
+	right: 70px;
+	border: 1px solid #429577;
+	background-color: white;
+	z-index: 9999999999999999999;
+}
+
+#progress {
+	position:absolute;
+	width: 40px;
+	height:400px;
+	background-color: #429577 ;
+	bottom:0px;
+	z-index: 9999999999999999999;
+}

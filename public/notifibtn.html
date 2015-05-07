@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, height=device-height" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Notification</title>
+	<link rel="stylesheet" href="css/notifibtn.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+  </head>
+  <body>
+	
+	<div id="container">
+		<!--	Here come the defined templates	-->
+	</div>
+    
+    <!-- Main Title Screen that appears when the page loads for the first time -->
+    <script id="intro-screen-template" type="text/template">
+		
+		<div id="startknop-container">
+            <div id="startknop">   </div>
+        </div>
+
+    </script>   
+    
+    <script id="waiting-screen-template" type="text/template">
+		  
+		<h1 id="finalMessage"></h1>
+		  
+	</script>
+    
+    <script id="aanval-screen-template" type="text/template">
+		
+		<div class="zoekLaag">
+			<img src="../img/blaadje1.svg" alt="" id="blad1" class="blad">
+			<img src="../img/blaadje2.svg" alt="" id="blad2" class="blad">
+			<img src="../img/blaadje3.svg" alt="" id="blad3" class="blad">
+			<img src="../img/blaadje1.svg" alt="" id="blad4" class="blad">
+			<img src="../img/blaadje2.svg" alt="" id="blad5" class="blad">
+			<img src="../img/blaadje3.svg" alt="" id="blad6" class="blad">
+			<img src="../img/blaadje1.svg" alt="" id="blad7" class="blad">
+		</div>
+		
+		<img src="../img/verzamel1.svg" class="notification">
+		
+		<div class="btn-container">
+			<div class="btn" id="abtn1"></div>
+			<div class="btn" id="abtn2"></div>
+			<div class="btn" id="abtn3"></div>
+		</div>
+		
+		<div id="button">
+			<div class="btn" id="ptn1"></div>
+			<div class="btn" id="ptn2"></div>
+			<div class="btn" id="ptn3"></div>
+		</div>
+		
+		<div id="aplayer"></div>
+		
+		<div id="progress-container">
+		   <div id="progress"></div>		
+       </div>
+        <h1 id="finalMessage"></h1>
+		<div id="monster-con">
+			<div class="container" id="con1">		
+				<p class="monster1" id="monster"></p>
+				<img src="../img/aztoek_blauw.svg" alt="" id="monster1" class="free">
+				<img src="../img/spraak1.svg" alt="" id="spraak1" class="spraak">
+				</div>
+			<div class="container" id="con2">
+				<p class="monster2" id="monster"></p>
+				<img src="../img/aztoek_geel.svg" alt="" id="monster2" class="free">
+				<img src="../img/spraak2.svg" alt="" id="spraak2" class="spraak">
+			</div>
+			<div class="container" id="con3">
+				<p class="monster3" id="monster"></p>
+				<img src="../img/aztoek_rood.svg" alt="" id="monster3" class="free">
+				<img src="../img/spraak3.svg" alt="" id="spraak3" class="spraak">
+			</div>
+		<div>
+	</script>
+    
+    <script id="verzamel-screen-template" type="text/template">
+				
+		<img src="../img/verzamel1.svg" class="notification">
+		<div class="btn-container">
+			<div class="btn" id="vbtn1"></div>
+			<div class="btn" id="vbtn2"></div>
+			<div class="btn" id="vbtn3"></div>
+		</div>
+		
+		<div id="progress-container">
+		   <div id="progress"></div>		
+       </div>
+        <h1 id="finalMessage"></h1>
+        
+        <div id="vplayer"></div>    
+		
+	</script>
+    
+    <script id="genezer-screen-template" type="text/template">
+		
+		<div id="scoreboard">
+			<div class="score" id="herb1">Herb 1 : <span id="herbcount1">0</span></div>
+			<div class="score" id="herb2">Herb 2 : <span id="herbcount2">0</span></div>
+			<div class="score" id="herb3">Herb 3 : <span id="herbcount3">0</span></div>
+		</div>
+		
+		<div id="potion-placeholder"></div>
+		<div id="ketel-placeholder">    
+		  <div id="ketel" class="droppable standing">
+
+		  </div>
+		</div>
+		<div id="kettle-restore-placeholder" class="draggable">
+
+		</div>
+		
+		<img src="../img/verzamel1.svg" class="notification">
+		<div class="btn-container">
+			<div class="btn" id="gbtn1"></div>
+			<div class="btn" id="gbtn2"></div>
+			<div class="btn" id="gbtn3"></div>
+		</div>
+		
+		<div id="progress-container">
+		   <div id="progress"></div>		
+       </div>
+        <h1 id="finalMessage"></h1>
+        
+        <div id="gplayer"></div>   
+		
+	</script>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/notifibtn.js"></script>
+  </body>
+</html>
